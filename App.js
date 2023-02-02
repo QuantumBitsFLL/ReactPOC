@@ -19,7 +19,7 @@ const HomeScreen = ( {navigation} ) => {
 		<View style={styles.container}>
 			<Text style={styles.title}>Hello, World! Cnt is { cnt }.</Text>
 			<TouchableOpacity style={styles.button} onPress={ onPress }>
-				<Text style={styles.text}>Hello, World! Pressed { cnt } time{ cnt === 1 ? '' : 's' } so far.</Text> 
+				<Text style={styles.text}>Hello, World! Pressed { cnt < 100 ? (cnt + "time" + (cnt === 1 ? '' : s) + "so far.") : `Damn bruh r u from ohio? ${cnt} times` }</Text> 
 			</TouchableOpacity>
 		</View>
 	);
